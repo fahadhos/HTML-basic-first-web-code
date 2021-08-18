@@ -1,17 +1,17 @@
-<!--        Internal CSS-->
  
-a {
-    text-decoration: none;
+ 
+a{
+text-decoration: none;
     color: white;
 }
 
-table {
-
+.table-container {
+background-color: yellow;width: 20%;
 }
 
   
 .menu-container {
- 
+     
     width: 100%;
     margin: 0 auto;
     background-color: rgb(123, 230, 109);
