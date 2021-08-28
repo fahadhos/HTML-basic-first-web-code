@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript</title>
+    <link rel = "icon" href =  "Images/logo.png"  type = "image/x-icon">
+     <link rel="stylesheet" href="css/style.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+</head>
+<!-- Navigation bar control panel -->
+<header>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Tutorial</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" target="_blank" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" target="_blank" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" target="_blank" href="bootstrap.html">BootStrap_Example</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" target="_blank" href="javascript.html">Javascript_Example</a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link" target="_blank" href="index.php">PHP_Viewer</a>
+                    </li>
+                     
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2 mb-lg-0" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit" bg-primary style="color:white">Search</button>
+                </form>
+                <ul class="navbar-nav me-3 mb-6 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="btn btn-primary" href="login-signup.html" role="button">Login/SignUp</a>      
+                        <!-- <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a> -->
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+<body>
+  <script>
+      function multiplication(){
+var number1=document.getElementById("fnumber").value;
+var number2= document.getElementById("snumber").value;
+var mul= Number(number1)*Number(number2);
+document.getElementById('result1').value=mul;
+      }
+function summation()
+{
+
+    var fnumber =document.getElementById('fnumber').value;
+    var snumber =document.getElementById('snumber').value;
+   var thirdnum =  prompt('Enter the third number');
+
+    var ans = Number(fnumber)+Number(snumber)+Number(thirdnum);
+   document.getElementById('result').value=ans;  //alert('firstnumber '+fnumber);
+   
+   // alert('ans= '+ans); 
+   //alert('Submitted!..');
+}
+
+  </script>
+  
+    <!-- <p>javascript works</p> -->
+<table class="table-striped table table-bordered"style="width:40%">
+<tr>
+    <td>
+        First Number
+    </td>
+    <td> <input required name ="fnumber"id="fnumber"placeholder="Enter first number"></td>
+</tr>
+<tr>
+    <td>Second Number</td>
+    <td> <input name ="snumber"id="snumber"placeholder="Enter Second number"></td>
+
+</tr>
+<tr>
+    <td>Summation Result</td>
+    <td> <input name ="result"id="result" ></td>
+ 
+ 
+    <td> <input  onclick="summation()" onclick="multiplication()" type="button" value="Submit"></td>
+</tr>
+
+
+<tr>
+    <td>Multiplication Result</td>
+    <td> <input name ="result1"id="result1" ></td>
+<td> <input  onclick="multiplication()" onclick="multiplication()" type="button" value="Submit"></td>
+
+</tr>
+</table>
+
+ <!-- -->
+
+</body>
+</html>
